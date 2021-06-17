@@ -199,13 +199,6 @@ footer{
 
 /* Main */
 
-.container .jumbotron .main .gallery .row ul li{
-    display: inline-block;
-    list-style-type: none;
-    padding: 20px 5px;
-    font-size: 12px;
-}
-
 .container .jumbotron .main .top-bar a{
     border: 1px solid white;
     border-radius: 20px;
@@ -213,8 +206,15 @@ footer{
     font-size: 12px;
 }
 
-.row{
+.container .jumbotron .main .gallery .row{
     margin-top: 80px;
+}
+
+.container .jumbotron .main .gallery .row ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 20px 5px;
+    font-size: 12px;
 }
 
 /* Footer */
