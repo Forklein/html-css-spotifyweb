@@ -205,6 +205,7 @@ footer{
     top: 0;
     right: 0;
     width: calc(100% - 200px);
+    z-index: 1;
 }
 
 /* Element in section */
@@ -255,6 +256,26 @@ footer{
     margin-top: 80px;
 }
 
+.container .jumbotron .main .gallery .box{
+    position: relative;
+}
+
+.container .jumbotron .main .gallery .box i{
+    display: none;
+}
+
+.container .jumbotron .main .gallery .box:hover img{
+    opacity: 0.5;
+}
+
+.container .jumbotron .main .gallery .box:hover i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
 .container .jumbotron .main .row-2 .col,
 .container .jumbotron .main .row-3 .col,
 .container .jumbotron .main .row-4 .col {
@@ -298,3 +319,4 @@ footer{
 footer .col-25 .song-info p{
     font-size: 12px;
 }
+
