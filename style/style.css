@@ -6,10 +6,12 @@
 }
 
 .container{
-    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    height: 837px;
 }
 
-/* Utility */
+/* ********UTILITY******** */
 
 /* Col-size */
 
@@ -190,29 +192,10 @@
     align-items: center;
 }
 
-/* Structure Bases */
 
-.container .jumbotron{
-    height: 90vh;
-}
+/* ********START******** */
 
-footer{
-    min-height: 10vh;
-    padding: 0 5px;
-    align-items: center;
-}
-
-/* Structure content */
-
-.container .jumbotron .sidebar{
-    max-width: 200px;
-    padding: 15px;
-    position: relative;
-}
-
-.container .jumbotron .sidebar .playlist{
-    overflow: auto;
-}
+/* SIDEBAR */
 
 .container .jumbotron .main{
     width: calc(100% - 200px);
@@ -230,10 +213,6 @@ footer{
     width: calc(100% - 200px);
     z-index: 1;
 }
-
-/* Element in section */
-
-/* Sidebar */
 
 .container .jumbotron .sidebar .tools > div{
     padding: 5px 0;
@@ -259,7 +238,22 @@ footer{
     right: 15px;
 }
 
-/* Main */
+/* MAIN */
+
+.container .jumbotron{
+    height: 100%;
+}
+
+.container .jumbotron .sidebar{
+    max-width: 200px;
+    padding: 15px;
+    position: relative;
+}
+
+.container .jumbotron .sidebar .playlist{
+    overflow: auto;
+}
+
 
 .container .jumbotron .main .top-bar a{
     border: 1px solid white;
@@ -313,6 +307,12 @@ footer{
 }
 
 /* Footer */
+
+footer{
+    min-height: 100px;
+    padding: 0 5px;
+    align-items: center;
+}
 
 footer .col-25 .song-info p{
     font-size: 12px;
