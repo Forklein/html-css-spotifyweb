@@ -5,10 +5,7 @@
 }
 
 .container{
-    max-width: 1200px;
-    margin: 0 auto;
     height: 100vh;
-    background-color: goldenrod;
 }
 
 /* Utility */
@@ -151,11 +148,11 @@
 /* Structure Bases */
 
 .container .jumbotron{
-    height: 90%;
+    height: 90vh;
 }
 
 footer{
-    min-height: 10%;
+    min-height: 10vh;
     padding: 0 5px;
     align-items: center;
 }
@@ -163,19 +160,22 @@ footer{
 /* Structure content */
 
 .container .jumbotron .sidebar{
-    width: 200px;
+    min-width: 200px;
     padding: 15px;
 }
 
 .container .jumbotron .main{
     flex-grow: 1;
     overflow: auto;
+    position: relative;
 }
 
 .container .jumbotron .main .top-bar{
     min-height: 80px;
     line-height: 80px;
     padding-right: 20px;
+    position: fixed;
+    width: calc(100% - 200px);
 }
 
 /* Element */
@@ -211,6 +211,10 @@ footer{
     border-radius: 20px;
     padding: 10px 25px;
     font-size: 12px;
+}
+
+.row{
+    margin-top: 80px;
 }
 
 /* Footer */
