@@ -63,28 +63,54 @@
     text-decoration: none;
 }
 
-/* Img-50 */
+/* Img-width */
 
 .img-50{
     width: 50%;
 }
 
-/* Img-20 */
-
 .img-10{
     width: 10%;
 }
 
-/* Img-20 */
+.img-08{
+    width: 8%;
+}
+
+/* Filter */
 
 .filter{
     filter: invert(0.5);
 }
 
-/* Margin-bottom */
+/* Margin */
 
 .margin-bottom{
     margin-bottom: 10px;
+}
+
+/* Padding-left */
+
+.padding-left{
+    padding-left: 5px;
+}
+
+.padding-right{
+    padding-right: 5px;
+}
+
+.padding-top{
+    padding-top: 5px;
+}
+
+.padding-bottom{
+    padding-bottom: 5px;
+}
+
+/* border */
+
+.border-bottom{
+    border-bottom: 1px solid #656565;
 }
 
 /* Flex */
@@ -107,6 +133,7 @@
     justify-content: flex-start;
     align-items: center;
 }
+
 /* Structure Bases */
 
 .container .jumbotron{
@@ -140,9 +167,24 @@ footer{
 
 /* Element */
 
+/* Sidebar */
+
 .container .jumbotron .sidebar .tools > div{
     padding: 5px 0;
 }
+
+.container .jumbotron .sidebar .playlist > p{
+    padding: 10px 0;
+}
+
+#plus{
+    background-color: #a3a3a3;
+    color: #000;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Main */
 
 .container .jumbotron .main .top-bar a{
     border: 1px solid white;
@@ -150,3 +192,5 @@ footer{
     padding: 10px 25px;
     font-size: 12px;
 }
+
+/* Footer */
