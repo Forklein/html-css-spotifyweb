@@ -7,9 +7,8 @@
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    height: 900px;
+    height: 100vh;
     background-color: goldenrod;
-    position: relative;
 }
 
 /* Utility */
@@ -39,7 +38,7 @@
 }
 
 .text-grey{
-    color: #353535;
+    color: #656565;
 }
 
 /* Text-align capitalize nodeco */
@@ -64,6 +63,29 @@
     text-decoration: none;
 }
 
+/* Img-50 */
+
+.img-50{
+    width: 50%;
+}
+
+/* Img-20 */
+
+.img-10{
+    width: 10%;
+}
+
+/* Img-20 */
+
+.filter{
+    filter: invert(0.5);
+}
+
+/* Margin-bottom */
+
+.margin-bottom{
+    margin-bottom: 10px;
+}
 
 /* Flex */
 
@@ -71,11 +93,20 @@
     display: flex;
 }
 
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
 .flex-center{
     justify-content: center;
     align-items: center;
 }
 
+.flex-start{
+    justify-content: flex-start;
+    align-items: center;
+}
 /* Structure Bases */
 
 .container .jumbotron{
@@ -83,15 +114,16 @@
 }
 
 footer{
-    height: 10%;
+    min-height: 10%;
     justify-content: space-between;
 }
 
 /* Structure content */
 
 .container .jumbotron .sidebar{
-    width: 20%;
+    width: 250px;
     height: 100%;
+    padding: 15px;
 }
 
 .container .jumbotron .main{
@@ -101,13 +133,16 @@ footer{
 }
 
 .container .jumbotron .main .top-bar{
-    height: 80px;
+    min-height: 80px;
     line-height: 80px;
     padding-right: 20px;
 }
 
 /* Element */
 
+.container .jumbotron .sidebar .tools > div{
+    padding: 5px 0;
+}
 
 .container .jumbotron .main .top-bar a{
     border: 1px solid white;
@@ -115,5 +150,3 @@ footer{
     padding: 10px 25px;
     font-size: 12px;
 }
-
-
