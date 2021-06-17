@@ -160,12 +160,13 @@ footer{
 /* Structure content */
 
 .container .jumbotron .sidebar{
-    min-width: 200px;
+    max-width: 200px;
     padding: 15px;
+    position: relative;
 }
 
 .container .jumbotron .main{
-    flex-grow: 1;
+    width: calc(100% - 200px);
     overflow: auto;
     position: relative;
 }
@@ -175,6 +176,8 @@ footer{
     line-height: 80px;
     padding-right: 20px;
     position: fixed;
+    top: 0;
+    right: 0;
     width: calc(100% - 200px);
 }
 
@@ -197,6 +200,13 @@ footer{
     font-size: 16px;
 }
 
+.container .jumbotron .sidebar .user{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+}
+
 /* Main */
 
 .container .jumbotron .main .top-bar a{
@@ -215,6 +225,7 @@ footer{
     list-style-type: none;
     padding: 20px 5px;
     font-size: 12px;
+    cursor: pointer;
 }
 
 /* Footer */
