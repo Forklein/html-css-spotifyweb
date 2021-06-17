@@ -3,3 +3,95 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 900px;
+    background-color: goldenrod;
+    position: relative;
+}
+
+/* Utility */
+
+/* Bg-color */
+
+.bg-top-bar{
+    background-color: #080b12;
+}
+
+.bg-side-bar{
+    background-color: #000;
+}
+
+.bg-main{
+    background-color: #141922;
+}
+
+.bg-footer{
+    background: #282828;
+}
+
+/* Text-color */
+
+.text-white{
+    color: #fff;
+}
+
+.text-grey{
+    color: #353535;
+}
+
+/* Text-align */
+
+.text-left{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+/* Flex */
+
+.flex{
+    display: flex;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+/* Structure */
+
+.container .jumbotron{
+    height: 90%;
+}
+
+.container .jumbotron .sidebar{
+    width: 20%;
+    height: 100%;
+}
+
+.container .jumbotron .main{
+    width: 80%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.container .jumbotron .main .top-bar{
+    height: 10%;
+}
+
+footer{
+    height: 10%;
+    justify-content: space-between;
+}
+
+
+
