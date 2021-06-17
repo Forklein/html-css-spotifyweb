@@ -75,10 +75,20 @@
     font-weight: bold;
 }
 
+/* Fontsize sidebar */
+
+.font-sidebar{
+    font-size: 13px;
+}
+
 /* Img-width */
 
 .img-full{
     width: 100%;
+}
+
+.img-70{
+    width: 70%;
 }
 
 .img-50{
@@ -236,8 +246,10 @@ footer{
 #plus{
     background-color: #a3a3a3;
     color: #000;
-    padding: 10px;
-    font-size: 16px;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 25px;
+    vertical-align: middle;
 }
 
 .container .jumbotron .sidebar .user{
