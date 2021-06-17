@@ -13,6 +13,16 @@
 
 /* Utility */
 
+/* Col-size */
+
+.col-25{
+    width: 25%;
+}
+
+.col-50{
+    width: 50%;
+}
+
 /* Bg-color */
 
 .bg-top-bar{
@@ -146,20 +156,19 @@
 
 footer{
     min-height: 10%;
-    justify-content: space-between;
+    padding: 0 5px;
+    align-items: center;
 }
 
 /* Structure content */
 
 .container .jumbotron .sidebar{
     width: 200px;
-    height: 100%;
     padding: 15px;
 }
 
 .container .jumbotron .main{
     flex-grow: 1;
-    height: 100%;
     overflow: auto;
 }
 
@@ -205,3 +214,7 @@ footer{
 }
 
 /* Footer */
+
+footer .col-25 .song-info p{
+    font-size: 12px;
+}
