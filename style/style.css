@@ -92,6 +92,12 @@
     width: 8%;
 }
 
+/* Border-radius 50 */
+
+.border-radius-50{
+    border-radius: 50%;
+}
+
 /* Filter */
 
 .filter{
@@ -201,7 +207,7 @@ footer{
     width: calc(100% - 200px);
 }
 
-/* Element */
+/* Element in section */
 
 /* Sidebar */
 
@@ -249,9 +255,10 @@ footer{
     margin-top: 80px;
 }
 
-.container .jumbotron .main .row-2 .col {
+.container .jumbotron .main .row-2 .col,
+.container .jumbotron .main .row-3 .col,
+.container .jumbotron .main .row-4 .col {
     flex-basis: 200px;
-    height: 200px;
 }
 
 /* Main background-img */
