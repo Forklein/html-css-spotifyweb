@@ -42,7 +42,7 @@
     color: #353535;
 }
 
-/* Text-align */
+/* Text-align capitalize nodeco */
 
 .text-left{
     text-align: left;
@@ -56,6 +56,15 @@
     text-align: right;
 }
 
+.text-upper{
+    text-transform: uppercase;
+}
+
+.text-nodec{
+    text-decoration: none;
+}
+
+
 /* Flex */
 
 .flex{
@@ -67,11 +76,18 @@
     align-items: center;
 }
 
-/* Structure */
+/* Structure Bases */
 
 .container .jumbotron{
     height: 90%;
 }
+
+footer{
+    height: 10%;
+    justify-content: space-between;
+}
+
+/* Structure content */
 
 .container .jumbotron .sidebar{
     width: 20%;
@@ -81,17 +97,23 @@
 .container .jumbotron .main{
     width: 80%;
     height: 100%;
-    overflow-y: scroll;
+    overflow: auto;
 }
 
 .container .jumbotron .main .top-bar{
-    height: 10%;
+    height: 80px;
+    line-height: 80px;
+    padding-right: 20px;
 }
 
-footer{
-    height: 10%;
-    justify-content: space-between;
-}
+/* Element */
 
+
+.container .jumbotron .main .top-bar a{
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 25px;
+    font-size: 12px;
+}
 
 
