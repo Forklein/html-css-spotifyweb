@@ -320,23 +320,57 @@ footer{
     z-index: 2;
 }
 
-footer :first-child{
-    padding-left: 20px;
-}
-
 footer :first-child .song-info p{
     font-size: 12px;
+}
+
+footer :nth-child(2){
+    align-items: center;
+}
+
+footer :nth-child(2) .btn-bar-top > i{
+    margin: 10px;
+    font-size: 18px;
+}
+
+footer .btn-bar-top #play-btn{
+    font-size: 35px;
+}
+
+footer :nth-child(2) .btn-bar-bottom .start{
+    padding: 0 15px;
+    font-size: 12px;
+}
+
+
+footer :nth-child(2) .btn-bar-bottom .play-bar{
+    width: 400px;
+    height: 3px;
+    border-radius: 10px;
+}
+
+footer :nth-child(2) .btn-bar-bottom .play-bar .playing-bar{
+    width: 50px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #fff;
 }
 
 footer :last-child{
     justify-content: flex-end;
     align-items: center;
-    padding-right: 20px;
 }
 
 footer :last-child .vol{
     width: 150px;
     height: 3px;
     border-radius: 10px;
+}
+
+footer :last-child .vol .playing-bar{
+    width: 30px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #fff;
 }
 

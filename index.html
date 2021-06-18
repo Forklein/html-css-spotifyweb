@@ -217,6 +217,7 @@
         <footer class="bg-footer flex">
             <!-- Col left -->
             <div class="col-25 flex flex-start">
+
                 <img class="img-20" src="./img/sinister.jpeg" alt="cover">
                 <div class="song-info bold padding-left">
                     <p class="text-white">Sinister</p>
@@ -226,17 +227,46 @@
                     <i class="far fa-heart text-grey"></i>
                     <i class="far fa-folder text-grey"></i>
                 </div>
+
             </div>
             <!-- Col center -->
-            <div class="col-50"></div>
+            <div class="col-50 flex-column text-white">
+
+                <div class="btn-bar-top">
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-step-backward"></i>
+                    <i class="far fa-play-circle" id="play-btn"></i>
+                    <i class="fas fa-step-forward"></i>
+                    <i class="fas fa-redo"></i>
+                </div>
+
+                <div class="btn-bar-bottom flex text-white">
+                    <div class="start">
+                        <p>0:25</p>
+                    </div>
+                    <div class="play-bar bg-footer-bar">
+                        <div class="playing-bar"></div>
+                    </div>
+                    <div class="start">
+                        <p>4:35</p>
+                    </div>
+                </div>
+                
+            </div>
             <!-- Col right -->
             <div class="col-25">
+
                 <div class="icon-footer-right text-white flex">
+
                     <i class="fas fa-list"></i>
                     <i class="fas fa-desktop padding-left"></i>
                     <i class="fas fa-volume-up padding-left"></i>
-                    <div class="vol bg-footer-bar margin-left"></div>
+                    <div class="vol bg-footer-bar margin-left">
+                        <div class="playing-bar"></div>
+                    </div>
+
                 </div>
+
             </div>
         </footer>
 
