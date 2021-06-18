@@ -45,7 +45,7 @@
 /* ********BG COLOR******** */
 
 .bg-top-bar{
-    background-color: #080b12;
+    background-color: rgba(8, 11, 18, 0.5)
 }
 
 .bg-side-bar{
@@ -315,7 +315,7 @@
     top: 0;
     right: 0;
     width: calc(100% - 220px);
-    z-index: 1;
+    z-index: 2;
 }
 
 .container .jumbotron .main .top-bar a{
@@ -323,6 +323,10 @@
     border-radius: 20px;
     padding: 10px 25px;
     font-size: 12px;
+}
+
+.container .jumbotron .main .top-bar a:hover{
+    font-size: 16px;
 }
 
 .container .jumbotron .main .gallery{
@@ -382,7 +386,7 @@ footer{
     padding: 0 5px;
     align-items: center;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 
 footer :first-child .song-info p{
@@ -488,7 +492,18 @@ footer :last-child .vol .playing-bar{
         display: none;
     }
 
+    footer :nth-child(2) .btn-bar-top > i{
+        margin: 2px;
+        font-size: 15px;
+    }
+
     footer :nth-child(2) .btn-bar-bottom .play-bar{
         width: 150px;
     }
+
+    footer :nth-child(2) .btn-bar-bottom .start{
+        padding: 0 5px;
+        font-size: 10px;
+    }
+    
 }
