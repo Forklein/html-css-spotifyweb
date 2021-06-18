@@ -104,6 +104,10 @@
     width: 20%;
 }
 
+.img-15{
+    width: 15%;
+}
+
 .img-10{
     width: 10%;
 }
@@ -121,7 +125,7 @@
 /* Filter */
 
 .filter{
-    filter: invert(0.5);
+    filter: invert(0.6);
 }
 
 /* Margin */
@@ -219,12 +223,37 @@
     overflow: auto;
 }
 
+.container .jumbotron .sidebar .tools .home:hover,
+.container .jumbotron .sidebar .tools .search:hover,
+.container .jumbotron .sidebar .tools .library:hover{
+    cursor: pointer;
+    color: #fff;
+    border-left: 2px solid #a5f42d;
+}
+
+.container .jumbotron .sidebar .tools .home:hover img,
+.container .jumbotron .sidebar .tools .search:hover img,
+.container .jumbotron .sidebar .tools .library:hover img{
+    cursor: pointer;
+    filter: invert(0);
+}
+
 .container .jumbotron .sidebar .tools > div{
     padding: 5px 0;
 }
 
 .container .jumbotron .sidebar .playlist > p{
     padding: 10px 0;
+}
+
+.container .jumbotron .sidebar .playlist .header-playlist > p:hover{
+    cursor: pointer;
+    color: #fff;
+}
+
+.container .jumbotron .sidebar .playlist ul li:hover{
+    cursor: pointer;
+    color: #fff;
 }
 
 #plus{
@@ -275,8 +304,12 @@
     display: inline-block;
     list-style-type: none;
     padding: 20px 5px;
-    font-size: 12px;
+    font-size: 14px;
     cursor: pointer;
+}
+
+.container .jumbotron .main .gallery .header-gallery ul li:hover{
+    border-bottom: 1px solid #a5f42d;
 }
 
 /* Start row */
