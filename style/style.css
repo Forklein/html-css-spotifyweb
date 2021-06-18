@@ -227,7 +227,6 @@
     align-items: center;
 }
 
-
 /* ********START******** */
 
 /* ! SIDEBAR */
@@ -237,6 +236,10 @@
     padding: 15px;
     justify-content: space-between;
     overflow: hidden;
+}
+
+#logo-xs{
+    display: none;
 }
 
 .container .jumbotron .sidebar .playlist{
@@ -511,6 +514,36 @@ footer :last-child .vol:hover .playing-bar .circle-play{
 
 /* TODO - START MEDIA QUERY */
 
+@media screen and (max-width: 1200px){
+    .main .row-gallery{
+        flex-wrap: wrap;
+    }
+    
+    .main .row-gallery .col img{
+        padding: 10px 0;
+        width: 90%;
+    }
+
+    figcaption{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .main .row-gallery{
+        flex-wrap: wrap;
+    }
+    
+    .main .row-gallery .col img{
+        padding: 15px 0;
+        width: 80%;
+    }
+
+    figcaption{
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width: 576px){
     .container .jumbotron .main{
         width: 100%;
@@ -523,8 +556,13 @@ footer :last-child .vol:hover .playing-bar .circle-play{
         padding: 15px;
     }
 
-    .container .jumbotron .sidebar .logo img{
-        width: 100%;
+    #logo-xl{
+        display: none;
+    }
+
+    #logo-xs{
+        display: block;
+        width: 80%;
     }
 
     .container .jumbotron .sidebar .tools{
@@ -533,13 +571,27 @@ footer :last-child .vol:hover .playing-bar .circle-play{
         flex-grow: 1;
     }
     
-    .container .jumbotron .sidebar .tools img{
+    .container .jumbotron .sidebar .tools img,
+    .container .jumbotron .sidebar .user img{
         width: 50%;
     }
 
+    .flex-mobile{
+        display: flex;
+    }
+
+    .flex-center-mobile{
+        justify-content: center;
+    }    
+
     .container .jumbotron .sidebar .tools p,
-    .container .jumbotron .sidebar .playlist{
+    .container .jumbotron .sidebar .playlist,
+    .container .jumbotron .sidebar .user p{
         display: none;
+    }
+
+    .container .jumbotron .sidebar .user .download{
+        border: none;
     }
 
     footer :nth-child(2) .btn-bar-top > i{
@@ -560,3 +612,5 @@ footer :last-child .vol:hover .playing-bar .circle-play{
         padding-left: 5px;
     }
 }
+
+
