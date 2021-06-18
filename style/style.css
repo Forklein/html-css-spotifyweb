@@ -8,7 +8,6 @@
 .container{
     width: 100%;
     max-width: 100%;
-    height: 837px;
 }
 
 /* ********UTILITY******** */
@@ -201,21 +200,14 @@
 
 /* SIDEBAR */
 
-.container .jumbotron .main{
-    width: calc(100% - 200px);
-    overflow: auto;
+.container .jumbotron .sidebar{
+    width: 200px;
+    padding: 15px;
     position: relative;
 }
 
-.container .jumbotron .main .top-bar{
-    min-height: 80px;
-    line-height: 80px;
-    padding-right: 20px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: calc(100% - 200px);
-    z-index: 1;
+.container .jumbotron .sidebar .playlist{
+    overflow: auto;
 }
 
 .container .jumbotron .sidebar .tools > div{
@@ -245,19 +237,26 @@
 /* MAIN */
 
 .container .jumbotron{
-    height: 100%;
+    height: calc(100vh - 100px);
 }
 
-.container .jumbotron .sidebar{
-    max-width: 200px;
-    padding: 15px;
+.container .jumbotron .main{
+    width: calc(100% - 200px);
+    overflow: auto;
     position: relative;
 }
 
-.container .jumbotron .sidebar .playlist{
-    overflow: auto;
+.container .jumbotron .main .top-bar{
+    min-height: 80px;
+    line-height: 80px;
+    padding-right: 20px;
+    margin-right: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 220px);
+    z-index: 1;
 }
-
 
 .container .jumbotron .main .top-bar a{
     border: 1px solid white;
@@ -313,7 +312,7 @@
 /* Footer */
 
 footer{
-    min-height: 100px;
+    height: 100px;
     padding: 0 5px;
     align-items: center;
 }
@@ -322,7 +321,13 @@ footer .col-25 .song-info p{
     font-size: 12px;
 }
 
-footer .col-25 .vol{
+footer :last-child{
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+footer :last-child .vol{
     width: 150px;
     height: 3px;
     border-radius: 10px;
