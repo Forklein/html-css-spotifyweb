@@ -38,7 +38,11 @@
 }
 
 .bg-footer{
-    background: #282828;
+    background-color: #282828;
+}
+
+.bg-footer-bar{
+    background-color: #5a5a5a;
 }
 
 /* Text-color */
@@ -316,5 +320,11 @@ footer{
 
 footer .col-25 .song-info p{
     font-size: 12px;
+}
+
+footer .col-25 .vol{
+    width: 150px;
+    height: 3px;
+    border-radius: 10px;
 }
 
