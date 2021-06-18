@@ -455,3 +455,32 @@ footer :last-child .vol .playing-bar{
     background-color: #fff;
 }
 
+/* TODO - START MEDIA QUERY */
+
+@media screen and (max-width: 576px){
+    .container .jumbotron .main{
+        width: 100%;
+    }
+    .container .jumbotron .main .top-bar{
+        width: calc(100% - 110px)
+    }
+    .container .jumbotron .sidebar{
+        width: 100px;
+        padding: 15px;
+    }
+
+    .container .jumbotron .tools{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    
+    .container .jumbotron .tools img{
+        width: 50%;
+    }
+
+    .container .jumbotron .tools p,
+    .container .jumbotron .playlist{
+        display: none;
+    }
+}
