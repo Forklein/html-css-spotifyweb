@@ -12,7 +12,7 @@
 
 /* ********UTILITY******** */
 
-/* Col-size */
+/* ********COL SIZE******** */
 
 .col-25{
     width: 25%;
@@ -22,7 +22,7 @@
     width: 50%;
 }
 
-/* Bg-color */
+/* ********BG COLOR******** */
 
 .bg-top-bar{
     background-color: #080b12;
@@ -44,7 +44,7 @@
     background-color: #5a5a5a;
 }
 
-/* Text-color */
+/* ********TEXT COLOR******** */
 
 .text-white{
     color: #fff;
@@ -54,7 +54,7 @@
     color: #656565;
 }
 
-/* Text-align capitalize nodeco bold */
+/* ********TEXT Align Capitalize Nodeco Bold******** */
 
 .text-left{
     text-align: left;
@@ -80,13 +80,13 @@
     font-weight: bold;
 }
 
-/* Fontsize sidebar */
+/* ********FONT SIDEBAR******** */
 
 .font-sidebar{
     font-size: 13px;
 }
 
-/* Img-width */
+/* ********IMG WIDTH******** */
 
 .img-full{
     width: 100%;
@@ -116,19 +116,19 @@
     width: 8%;
 }
 
-/* Border-radius 50 */
+/* ********BORDER RADIUS-50******** */
 
 .border-radius-50{
     border-radius: 50%;
 }
 
-/* Filter */
+/* ********FILTER EFFECT******** */
 
 .filter{
     filter: invert(0.6);
 }
 
-/* Margin */
+/* ********MARGIN******** */
 
 .margin-left{
     margin-left: 10px;
@@ -150,7 +150,7 @@
     margin-bottom: 10px;
 }
 
-/* Padding-left */
+/* ********PADDING******** */
 
 .padding-left{
     padding-left: 5px;
@@ -176,13 +176,13 @@
     padding-bottom: 5px;
 }
 
-/* border */
+/* ********BORDER******** */
 
 .border-bottom{
     border-bottom: 1px solid #656565;
 }
 
-/* Flex */
+/* ********FLEX SETTINGS******** */
 
 .flex{
     display: flex;
@@ -227,6 +227,8 @@
     overflow: auto;
 }
 
+/* ********HOVER EFFECT******** */
+
 .container .jumbotron .sidebar .tools .home:hover,
 .container .jumbotron .sidebar .tools .search:hover,
 .container .jumbotron .sidebar .tools .library:hover{
@@ -241,6 +243,9 @@
     cursor: pointer;
     filter: invert(0);
 }
+
+/* ******** END HOVER EFFECT******** */
+
 
 .container .jumbotron .sidebar .tools > div{
     padding: 5px 0;
@@ -312,6 +317,8 @@
     cursor: pointer;
 }
 
+/* ********HOVER EFFECT******** */
+
 .container .jumbotron .main .gallery .header-gallery ul li:hover{
     border-bottom: 1px solid #a5f42d;
 }
@@ -361,6 +368,9 @@ footer :first-child .song-info p{
     font-size: 12px;
 }
 
+/* ********HOVER EFFECT******** */
+
+
 footer :first-child .icon-footer-left :first-child:hover{
     cursor: pointer;
     color: red;
@@ -370,6 +380,9 @@ footer :first-child .icon-footer-left :last-child:hover{
     cursor: pointer;
     color: rgb(95, 66, 47);
 }
+
+/* ********END HOVER EFFECT******** */
+
 
 footer :nth-child(2){
     align-items: center;
