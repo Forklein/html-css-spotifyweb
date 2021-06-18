@@ -391,6 +391,11 @@ footer{
 
 footer :first-child .song-info p{
     font-size: 12px;
+    cursor: pointer;
+}
+
+footer :first-child .song-info :last-child:hover{
+    text-decoration: underline;
 }
 
 /* ********HOVER EFFECT******** */
@@ -418,7 +423,7 @@ footer :nth-child(2) .btn-bar-top > i{
     font-size: 18px;
 }
 
-footer .btn-bar-top #play-btn{
+footer :nth-child(2) .btn-bar-top #play-btn{
     font-size: 35px;
 }
 
@@ -432,13 +437,37 @@ footer :nth-child(2) .btn-bar-bottom .play-bar{
     width: 400px;
     height: 3px;
     border-radius: 10px;
+    position: relative;
 }
+
 
 footer :nth-child(2) .btn-bar-bottom .play-bar .playing-bar{
     width: 50px;
     height: 3px;
     border-radius: 10px;
     background-color: #fff;
+}
+
+footer :nth-child(2) .btn-bar-bottom .play-bar:hover .playing-bar{
+    background-color: #a5f42d;
+    cursor: pointer;
+}
+
+/*? First circle play */
+
+footer :nth-child(2) .btn-bar-bottom .play-bar .playing-bar .circle-play{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: -3px;
+    left: 42px;
+    display: none;
+}
+
+footer :nth-child(2) .btn-bar-bottom .play-bar:hover .playing-bar .circle-play{
+    display: block;
 }
 
 footer :last-child{
@@ -457,6 +486,29 @@ footer :last-child .vol .playing-bar{
     height: 3px;
     border-radius: 10px;
     background-color: #fff;
+    position: relative;
+}
+
+footer :last-child .vol:hover .playing-bar{
+    background-color: #a5f42d;
+    cursor: pointer;
+}
+
+/*? Second circle play */
+
+footer :last-child .vol .playing-bar .circle-play{
+    height: 10px;
+    max-width: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: -3px;
+    left: 28px;
+    display: none;
+}
+
+footer :last-child .vol:hover .playing-bar .circle-play{
+    display: block;
 }
 
 /* TODO - START MEDIA QUERY */
@@ -504,6 +556,10 @@ footer :last-child .vol .playing-bar{
     footer :nth-child(2) .btn-bar-bottom .start{
         padding: 0 5px;
         font-size: 10px;
+    }
+
+    footer :last-child .icon-footer-right > i{
+        padding-left: 5px;
     }
     
 }
