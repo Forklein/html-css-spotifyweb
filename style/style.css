@@ -527,6 +527,10 @@ footer :last-child .vol:hover .playing-bar .circle-play{
     figcaption{
         font-size: 14px;
     }
+
+    footer :nth-child(2) .btn-bar-bottom .play-bar{
+        width: 300px;
+    }
 }
 
 @media screen and (max-width: 992px){
@@ -542,6 +546,11 @@ footer :last-child .vol:hover .playing-bar .circle-play{
     figcaption{
         font-size: 12px;
     }
+
+    footer :nth-child(2) .btn-bar-bottom .play-bar{
+        width: 200px;
+    }
+    
 }
 
 @media screen and (max-width: 576px){
