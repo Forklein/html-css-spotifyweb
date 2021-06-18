@@ -346,6 +346,7 @@
 
 .container .jumbotron .main .gallery .header-gallery ul li:hover{
     border-bottom: 1px solid #a5f42d;
+    color: #fff;
 }
 
 /* !START ROW IN MAIN */
@@ -561,5 +562,4 @@ footer :last-child .vol:hover .playing-bar .circle-play{
     footer :last-child .icon-footer-right > i{
         padding-left: 5px;
     }
-    
 }
