@@ -510,6 +510,8 @@ footer :last-child .vol .playing-bar .circle-play{
 
 footer :last-child .vol:hover .playing-bar .circle-play{
     display: block;
+    position: relative;
+    z-index: 3;
 }
 
 /* TODO - START MEDIA QUERY */
