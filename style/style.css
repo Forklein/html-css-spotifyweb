@@ -469,18 +469,26 @@ footer :last-child .vol .playing-bar{
         padding: 15px;
     }
 
-    .container .jumbotron .tools{
+    .container .jumbotron .sidebar .logo img{
+        width: 100%;
+    }
+
+    .container .jumbotron .sidebar .tools{
         display: flex;
         flex-direction: column;
         flex-grow: 1;
     }
     
-    .container .jumbotron .tools img{
+    .container .jumbotron .sidebar .tools img{
         width: 50%;
     }
 
-    .container .jumbotron .tools p,
-    .container .jumbotron .playlist{
+    .container .jumbotron .sidebar .tools p,
+    .container .jumbotron .sidebar .playlist{
         display: none;
+    }
+
+    footer :nth-child(2) .btn-bar-bottom .play-bar{
+        width: 150px;
     }
 }
