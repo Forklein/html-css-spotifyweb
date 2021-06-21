@@ -361,6 +361,11 @@
 
 .container .jumbotron .main .gallery .row-gallery .col .box{
     position: relative;
+    transition: 1s;
+}
+
+.container .jumbotron .main .gallery .row-gallery .col .box:hover{
+    transform: translateY(-5%);
 }
 
 .container .jumbotron .main .gallery .row-gallery .col .box i{
@@ -374,7 +379,7 @@
 
 .container .jumbotron .main .gallery .row-gallery .col .box:hover i{
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: block;
